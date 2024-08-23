@@ -19,8 +19,8 @@
 /*Pseudo Class root é a raiz da arvore tudo que for colocar nesta tag servirá para o documento inteiro.*/
 
 :root {/* toda variavel em css começa com dois traçosEx:--nome*/
---cor0:#e2c313;
---cor1:#83e1ad;
+--cor0:hsl(147, 64%, 68%);
+--cor1:#76e2a7;
 --cor2:#3ddc84;
 --cor3:#2fa866;
 --cor4:#1a5c37;
@@ -52,10 +52,10 @@ header {
 }
 
 header > h1 {/* Texto curiosidades*/
-    color:rgb(68, 16, 16);
+    color:#ffffff;
     font-family:var(--fonte-destaque);
     font-size: 3em;/*medida para aumentar o tamanho do h1*/
-    padding-bottom: 50px;/*foi colocado esta medida para distanciar o paragrafo do h1*/
+    padding-bottom: 40px;/*foi colocado esta medida para distanciar o paragrafo do h1*/
     text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.322); /*usado para colocar sombra no texto*/
 }
 
@@ -72,7 +72,10 @@ header > p {
     padding-left: 10px;/* este dois paramentros foi usado para que o paragrafo não encoste nas pontas do site quando o site foi minimizado ou diminuir a tela.*/
     padding-right: 10px;
 
+    
     text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.322); /*usado para colocar sombra no texto*/
+
+    padding: 10px;
     
 }
 
@@ -81,11 +84,13 @@ nav  {
     padding: 10px; 
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);  /*sombra na area do link*/
     
+    
 }
 
 nav a {
    color: #ffffff;
    text-decoration: none;/*parametro para tirar o underline do link*/
+   
    padding: 10px; /*tag usada para afastar um link do outro*/
    font-weight: bold; /* utilizada para colocar peso na fonte ou seja Negrito termo bold*/
 
@@ -222,6 +227,7 @@ footer  a {
     color: white;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 1.2em;
     
 }
 
