@@ -55,7 +55,7 @@ header > h1 {/* Texto curiosidades*/
     color:rgb(68, 16, 16);
     font-family:var(--fonte-destaque);
     font-size: 3em;/*medida para aumentar o tamanho do h1*/
-    margin-bottom: 30px;/*foi colocado esta medida para distanciar o paragrafo do h1*/
+    padding-bottom: 50px;/*foi colocado esta medida para distanciar o paragrafo do h1*/
     text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.322); /*usado para colocar sombra no texto*/
 }
 
