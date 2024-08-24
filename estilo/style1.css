@@ -1,0 +1,132 @@
+@charset "utf-8px";
+/* efeito paralass
+1º veririficar quais as partes serão texto e quais as partes terão imagens no fundo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+}
+
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+html, body {
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+header {
+    background-color: black;
+    height: 300px;
+    
+}
+
+header  h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--fonte2);
+    font-variant: small-caps; /*para configurar para as letras ficarem todas em Maiuscúla podemos fazer de duas formas:
+    1º = font-variant: small-caps; esta esta opção deixara todas maiusculas porém as iniciais em destaque.
+    
+    2º = text-transform: uppercase; esta opção deixa todas maiúsculas por igual*/
+    padding-top: 50px;
+    font-size: 10vw; /*Medida esta relacionada a largura da pagina
+    conforme vai diminuindo ou aumentando a tela a letra acompanhar de acordo com a medidar posta neste caso é 10 por cento da largura da pagina*/
+}
+
+header p {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section {
+    font-family:var(--fonte3) ;
+    font-size: 3vw;
+    padding-top: 10vh; /*configuração 10% da view height*/
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+
+}
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+
+
+}
+
+section.imagem{
+    background-color: rgb(51, 51 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px opx rgba(0, 0, 0, 0.473) ;/*Inset pra dentro*/
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0,0.514);
+    text-shadow: 1px 1px opx black;
+
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: center right;
+
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.a1 {
+    color: white;
+    text-align:right;
+    font-weight: bold;
+}
